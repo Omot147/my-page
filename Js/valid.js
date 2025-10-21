@@ -1,4 +1,4 @@
-const form = document.getElementByClassName("form");
+const form = document.querySelector("form");
 const userName = document.getElementById('username');
 const email = document.getElementById('email');
 const subject = document.getElementById('subject');
@@ -62,3 +62,15 @@ const validateInputs = () => {
         setSuccess(message);
     }
 };
+const thankYouMessage = document.querySelector('#thank-you-message');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  thankYouMessage.classList.add('show');
+  setTimeout(() => form.submit(), 2000);
+});
+const incompleteDetailsMessage = document.querySelector('#incomplete-details-message');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  incompleteDetailsMessage.classList.add('show');
+  setTimeout(() => form.submit(), 2000);
+});
