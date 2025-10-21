@@ -13,18 +13,30 @@
             <h2 class="title">Register</h2>
             <p class="sign">Signup now and get full access to my bio.</p>
             <section class="form-group">
+                <div class="input-control">
                 <label for="name" data-testid="test-contact-name">
-                    <input type="text" id="name" placeholder="Enter your full name here..." required>
+                    <input type="text" id="username" placeholder="Enter your full name here..." required>
                 </label>
+                <div class="error"></div>
+            </div>
+                <div class="input-control">
                 <label for="email" data-testid="test-contact-email">
-                    <input type="email" id="email" placeholder="nameexample@gmail.com..." required>
+                    <input type="email" id="email" placeholder="name@example.com..." required>
                 </label>
+                <div class="error"></div>
+            </div>
+                <div class="input-control">
                 <label for="subject" data-testid="test-contact-subject">
-                    <input type="text" id="subject" placeholder="subject:">
+                    <input type="text" id="subject" placeholder="subject:" required>
                 </label>
+                <div class="error"></div>
+            </div>
+                <div class="input-control">
                 <label for="message" data-testid="test-contact-message">
-                    <input type="message" id="message" placeholder="Write your message..." optional>
+                    <input type="message" id="message" placeholder="Write your message..."  minlength="10" required>
                 </label>
+                <div class="error"></div>
+            </div>
             </section>
             <button class="submit" data-testid="test-contact-submit">Submit</button>
             <p class="account">
@@ -33,5 +45,6 @@
             </p>
         </form>
     </main>
+    <script src="/Js/valid.js"></script>
 </body>
 </html>

@@ -9,28 +9,32 @@ body{
     background-repeat: no-repeat;
 }
 .items{
+    position: fixed;
     width: 100%;
-    background: black;
+    background: transparent;
+    box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    -webkit-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    -moz-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    border-radius: 10px;
 }
 .items .list{
     display: flex;
     justify-content: right;
-    height: 100%;
     padding: 10px;
     gap: 40px;
 }
 .items .list li{
     list-style: none;
-    padding: 10px;
+    padding: 6px;
     border-radius: 20px;
     border: none;
     background: #fff;
 }
 .items .list li a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color:black;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
 }
 .items .list li:hover{
@@ -234,7 +238,7 @@ border-radius: 24px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
 }
 .title{
     font-size: 28px;
@@ -264,8 +268,157 @@ border-radius: 24px;
     outline: none;
     border: none;
     border-radius: 10px;
+    color:#24323d;
+    font-size: 0.9em;
+    cursor:text;
+    transition: 0.3s ease;
 }
-
+.form label input:focus,
+.form label input:valid{
+    top: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.form label input:valid{
+    color: #1ab188;
+}
+.form label input:invalid{
+    color: #ff3860;
+}
+.input-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+}
+.input-control.error input{
+    border-color: #ff3860;
+}
+.input-control .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.input-control.success input{
+    border-color: #09c372;
+}
+.input-control input[type="message"]{
+    padding:20px;
+}
+.submit{
+    border: none;
+    outline: none;
+    background: #1ab188;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+.submit:hover{
+    background: #1ec79a;
+    transition:0.3s;
+}
+/*about-me page*/
+.container{
+    text-align: center;
+}
+.container .bio{
+    max-width:50em;
+    background: #24323d;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: 6rem;
+    top:2rem;
+    padding:20px;
+    border-radius: 10px;
+}
+.container .goals{
+    max-width:50em;
+    background: transparents;
+    text-align: center;
+    color: black;
+    position: relative;
+    left: 30rem;
+    top:4rem;
+    padding:30px;
+    border-radius: 10px;
+    line-height: 1.4em;
+    box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    -webkit-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    -moz-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    border-radius: 24px;
+}
+.container .goals ul{
+    list-style: none;
+}
+.container .confidence{
+    max-width:30em;
+    background: #24323d;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: 6rem;
+    top:6rem;
+    padding:30px;
+    border-radius: 10px;
+    line-height: 1.4em;
+}
+.container .confidence ul{
+    list-style: none;
+}
+.container .note{
+    max-width:40em;
+    background: transparent;
+    text-align: center;
+    color: black;
+    position: relative;
+    left: 35rem;
+    top:8rem;
+    padding:30px;
+    border-radius: 10px;
+    line-height: 1.4em;
+    box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    -webkit-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    -moz-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+    border-radius: 24px;
+}
+.container .thought{
+    max-width:40em;
+    background: #24323d;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: 8rem;
+    top:10rem;
+    padding:30px;
+    border-radius: 10px;
+    line-height: 1.4em;
+}
+.cta a{
+    text-decoration: none;
+    color: #fff;
+}
+.cta{
+    position: relative;
+    top: 4rem;
+    left: 14rem;
+    padding: 10px;
+    background: #09c372;
+    color: #f0f0f0;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+}
+.cta:hover{
+    background: #1ec79a;
+    color: #ff3860;
+    transition: 0.3s ease-out;
+}
+h3{
+    color: #09c372;
+    font-size: 24px;
+}
 
 
 
