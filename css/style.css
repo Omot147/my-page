@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/image/leone-venter-VieM9BdZKFo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.items{
+    width: 100%;
+    background: black;
+}
+.items .list{
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    padding: 10px;
+    gap: 40px;
+}
+.items .list li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+}
+.items .list li a{
+    text-decoration: none;
+    font-size: 22px;
+    color:black;
+    font-weight: 600;
+    font-style: normal;
+}
+.items .list li:hover{
+    color: #fff;
+    background: crimson;
+    transition: color 0.5s ease-out;
+}
+.items .list li a:hover{
+    color: #fff;
+    transition: color 0.3s ease-out;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-container{
+    width: 40%;
+    background-color:#fff;
+    margin: 50px;
+    box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+-webkit-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+-moz-box-shadow: 0px 2px 13px 5px rgba(115,105,105,0.64);
+border-radius: 24px;
+}
+.profile-container:hover{
+    background-color:rgb(36, 39, 41);
+    color: #fff;
+    transition: color 1.2s ease-out;
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 33, 235);
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.profile-img .image{
+    position:relative;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    padding: 3px;
+    border:6px solid rgb(33, 33, 235);
+    top:35px;
+    left: 50px;
+}
+.profile-container .description{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Public Sans", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    padding-left: 50px;
+}
+.about-me{
+    margin-top: 3vw;
+}
+.about-me h2{
+    padding-left:50px;
+    font-size: 30px;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+  }
+.about-me p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 30px;
+    margin-top: 18px;
+    line-height: 25px;
+  }
+  .about-me .time .current-time{
+    background: black;
+    color:#fff;
+    padding:6px;
+  }
+.about-me .hobbies{
+    font-size: 32px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.about-me .list{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.about-me .list li{
+    font-size: 18px;
+    padding-top: 15px;
+}
+.about-me .dislikes{
+    font-size: 32px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.about-me .hates{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.about-me .hates li{
+    font-size: 18px;
+    padding-top: 10px;
+}
+.socials{
+    width: 100%;
+    margin-left: 13vw;
+    padding-left: 25%;
+
+}
+.socials .connect{
+    font-size: 19px;
+    padding-bottom: 20px;
+    padding-left:10vw;
+}
+.socials button{
+    width: 150px;
+    padding:10px;
+    background: #fff;
+    color: black;
+    border: none;
+    border-radius: 19px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.socials button:hover{
+    color: #fff;
+    background: crimson;
+    transition: color 0.5s ease-out;
+}
+
+/*media screen-sizes*/
+@media(max-width:768px) {
+    .profile-container{
+        width: 768px;
+    }
+    .profile-img{
+        display:block;
+    }
+    .profile-img .image{
+        display: block;
+        position: relative;
+        top: 12px;
+    }
+    .profile-container .description{
+        display: block;
+        padding-top:19px;
+        text-wrap: wrap;
+        text-align: center;
+    }
+    .socials{
+        display: block;
+        width: 100%;
+        padding-left: px;
+        padding-right: px;
+        margin-left: 34.325px;
+        margin-right: 34.325px;
+    }
+    .socials .connect{
+        text-wrap: wrap;
+        display: block;
+        text-align:center;
+    }
+    .socials button{
+        display: block;
+        margin: 10px auto;
+    }
+    .about-me h2 p{
+        text-wrap: wrap;
+        display: flex;
+    }
+    .socials h3{
+        word-wrap: break-word;
+        text-align: center;
+        padding-left: 34.5px;
+        padding-right: 34.5px;
+    }
+}
+
+/*contact-us page styling*/
+#contact-us{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    max-width: 350px;
+    background: #24323d;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.title{
+    font-size: 28px;
+    color: #1ab188;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center ;
+}
+.sign,
+.account{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.account a{
+    color: #1ab188;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.account a:hover{
+    color:#1ec79a;
+}
+.form label input{
+    width: 100%;
+    padding:10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:512px){
+    .socials{
+        margin-left: 0;
+    }
+    .about-me h2{
+        padding-left: 6%;
+    }
+    .profile-container .description{
+        padding-left: 0;
+    }
+}
+@media(min-width:768px){
+    .profile-container .description{
+        margin-left: 10%;
+    }
+}
+    

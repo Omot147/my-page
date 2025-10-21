@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profile-card/content</title>
+</head>
+<body>
+    <nav class="items" data-testid="test-nav-bar">
+        <ul class="list">
+           <li><a href="contact.html">Contact Us</a></li>
+           <li><a href="">About Me</a></li> 
+        </ul>
+    </nav>
+    <article class="wrapper">
+    <article class="profile-container" data-testid="test-profile-card">
+          <figure class="profile-img" data-testid="test-user-avatar">
+            <img src="image/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg" alt="my profile" class="image" width="300" height="300">
+            <figcaption class="description">
+                Software Developer
+            </figcaption>
+          </figure>
+          <section class="about-me">
+            <h2 class="name" data-testid="test-user-name">Omoniyi Omotayo Joshua</h2>
+            <p class="bio" data-testid="test-user-bio">"Hi, I'm a full-stack developer specializing in building responsive and efficient web applications with a focus on frontend . I enjoy finding creative solutions to complex problems."</p>
+            <p class="time" data-testid="test-user-time"> Current Time: <span class="current-time" data-testid="test-user-time"></span></p>
+
+              <h2 class="hobbies" data-testid="test-user-hobbies">My Hobbies</h2><hr>
+                <ul class="list">
+                   <li>Music</li>
+                   <li>Coding</li>
+                   <li>learning</li>
+                   <li>Hiking</li>
+                </ul>
+                <h2 class="dislikes" data-testid="test-user-dislikes">My Dislikes</h2><hr>
+                <ul class="hates">
+                    <li>Mosquitoes</li>
+                    <li>Coffee</li>
+                    <li>Poor arrangement</li>
+                    <li>Noise</li>
+                </ul>
+        </section>
+        <section class="socials">
+            <h3 class="connect">Connect with me @</h3>
+            <button class="twitter"><i class="fa-brands fa-x-twitter"></i>Twitter</button>
+            <button class="facebook"><i class="fa-brands fa-instagram"></i>Facebook</button>
+            <button class="linkedin"><i class="fa-brands fa-linkedin"></i>Linkedin</button>
+            <button class="github" href="https://github.com/Omot147"><i class="fa-brands fa-github"></i>Github</button>
+        </section>
+    </article>
+</article>
+    <script>
+        function updateTime(){
+            const elementTime = document.querySelector('[data-testid = "test-user-time"]');
+            if(elementTime){
+                elementTime.textContent = Date.now();
+            }
+        }
+
+        updateTime();
+
+        setInterval(updateTime, 1000);
+    </script>

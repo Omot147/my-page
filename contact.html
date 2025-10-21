@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact us|page</title>
+</head>
+<body>
+    <main id="contact-us" data-testid="test-contact-us">
+        <form autocomplete="off" class="form">
+            <h2 class="title">Register</h2>
+            <p class="sign">Signup now and get full access to my bio.</p>
+            <section class="form-group">
+                <label for="name" data-testid="test-contact-name">
+                    <input type="text" id="name" placeholder="Enter your full name here..." required>
+                </label>
+                <label for="email" data-testid="test-contact-email">
+                    <input type="email" id="email" placeholder="nameexample@gmail.com..." required>
+                </label>
+                <label for="subject" data-testid="test-contact-subject">
+                    <input type="text" id="subject" placeholder="subject:">
+                </label>
+                <label for="message" data-testid="test-contact-message">
+                    <input type="message" id="message" placeholder="Write your message..." optional>
+                </label>
+            </section>
+            <button class="submit" data-testid="test-contact-submit">Submit</button>
+            <p class="account">
+                Already have an account ?
+                <a href="index.html">SignIn</a>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
