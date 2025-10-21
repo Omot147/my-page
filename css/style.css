@@ -104,7 +104,7 @@ border-radius: 24px;
     font-style: normal;
   }
 .about-me p{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     padding-left: 30px;
     margin-top: 18px;
@@ -144,7 +144,7 @@ border-radius: 24px;
 .socials{
     width: 100%;
     margin-left: 13vw;
-    padding-left: 25%;
+    padding-left: 48px;
 
 }
 .socials .connect{
@@ -153,15 +153,15 @@ border-radius: 24px;
     padding-left:10vw;
 }
 .socials button{
-    width: 150px;
+    width: 120px;
     padding:10px;
     background: #fff;
     color: black;
     border: none;
     border-radius: 19px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 600;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .socials button:hover{
     color: #fff;
@@ -218,6 +218,20 @@ border-radius: 24px;
 }
 
 /*contact-us page styling*/
+#thank-you-message {
+    display: none;
+  }
+  
+  #thank-you-message.show {
+    display: block;
+  }
+  #incomplete-details-message {
+    display: none;
+  }
+  
+  #incomplete-details-message.show {
+    display: block;
+  }
 #contact-us{
     display:flex;
     align-items: center;
@@ -439,7 +453,7 @@ h3{
 
 @media(min-width:512px){
     .socials{
-        margin-left: 0;
+        margin-left: -20px;
     }
     .about-me h2{
         padding-left: 6%;
